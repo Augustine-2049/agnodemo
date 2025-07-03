@@ -1,9 +1,18 @@
 from openai import OpenAI
+import os
+
+api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI()
 
-response = client.responses.create(
-    model="gpt-4.1",
-    input="Write a one-sentence bedtime story about a unicorn."
-)
 
-print(response.output_text)
+completion = client.chat.completions.create(
+    model="gpt-4.1",
+    messages=[
+        {
+            "role": "user",
+            "content": "Write a one-sentence bedtime story about a unicorn."
+        }
+    ]
+)
+ 
+print(completion.choices[0].message.content)

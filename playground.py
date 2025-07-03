@@ -5,12 +5,31 @@ from agno.storage.sqlite import SqliteStorage
 from agno.tools.duckduckgo import DuckDuckGoTools
 from agno.tools.yfinance import YFinanceTools
 
+from agno.models.openai import OpenAILike
+import os
+GEMINI_API_KEY= os.getenv("GEMINI_API_KEY")
+QWEN_API_KEY=os.getenv("QWEN_API_KEY")
+ 
+
+qw_model = OpenAILike(
+    id= 'qwen-turbo', # qwen-turbo / qwen3-235b-a22b / gemini-2.0-flash
+    api_key=QWEN_API_KEY,
+    base_url='https://dashscope.aliyuncs.com/compatible-mode/v1/',
+)
+gemini_model = OpenAILike(
+    id='gemini-2.0-flash',
+    api_key=GEMINI_API_KEY,
+    base_url='https://generativelanguage.googleapis.com/v1beta/openai/'
+)
+
 agent_storage: str = "tmp/agents.db"
 
 web_agent = Agent(
     name="Web Agent",
-    model=OpenAIChat(id="gpt-4o"),
-    tools=[DuckDuckGoTools()],
+    model=gemini_model,
+    tools=[
+        # DuckDuckGoTools()
+        ],
     instructions=["Always include sources"],
     # Store the agent sessions in a sqlite database
     storage=SqliteStorage(table_name="web_agent", db_file=agent_storage),
@@ -26,8 +45,10 @@ web_agent = Agent(
 
 finance_agent = Agent(
     name="Finance Agent",
-    model=OpenAIChat(id="gpt-4o"),
-    tools=[YFinanceTools(stock_price=True, analyst_recommendations=True, company_info=True, company_news=True)],
+    model=gemini_model, # OpenAIChat(id="gpt-4o"),
+    tools=[
+        # YFinanceTools(stock_price=True, analyst_recommendations=True, company_info=True, company_news=True)
+        ],
     instructions=["Always use tables to display data"],
     storage=SqliteStorage(table_name="finance_agent", db_file=agent_storage),
     add_datetime_to_instructions=True,
