@@ -4,9 +4,10 @@ import os
 from agno.playground import Playground
 from agno.tools import tool
 
+QWEN_API_KEY=os.getenv("QWEN_API_KEY")
 qw_model = OpenAILike(
     id= 'qwen-turbo', # qwen-turbo / qwen3-235b-a22b
-    api_key='sk-295ced4ab5a042d3949d48232553c078',
+    api_key=QWEN_API_KEY,
     base_url='https://dashscope.aliyuncs.com/compatible-mode/v1/',
     
     # extra_body={"chat_template_kwargs": {"enable_thinking": False}},

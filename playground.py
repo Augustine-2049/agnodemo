@@ -6,6 +6,7 @@ from agno.tools.duckduckgo import DuckDuckGoTools
 from agno.tools.yfinance import YFinanceTools
 
 from agno.models.openai import OpenAILike
+from agno.models.google import Gemini
 import os
 GEMINI_API_KEY= os.getenv("GEMINI_API_KEY")
 QWEN_API_KEY=os.getenv("QWEN_API_KEY")
@@ -28,7 +29,7 @@ web_agent = Agent(
     name="Web Agent",
     model=gemini_model,
     tools=[
-        # DuckDuckGoTools()
+        DuckDuckGoTools()
         ],
     instructions=["Always include sources"],
     # Store the agent sessions in a sqlite database
@@ -45,9 +46,9 @@ web_agent = Agent(
 
 finance_agent = Agent(
     name="Finance Agent",
-    model=gemini_model, # OpenAIChat(id="gpt-4o"),
+    model=Gemini(id="gemini-2.0-flash"),# gemini_model, # OpenAIChat(id="gpt-4o"),
     tools=[
-        # YFinanceTools(stock_price=True, analyst_recommendations=True, company_info=True, company_news=True)
+        YFinanceTools(stock_price=True, analyst_recommendations=True, company_info=True, company_news=True)
         ],
     instructions=["Always use tables to display data"],
     storage=SqliteStorage(table_name="finance_agent", db_file=agent_storage),
