@@ -54,7 +54,14 @@ from agno.vectordb.lancedb import LanceDb, SearchType
 from agno.tools.yfinance import YFinanceTools
 ```
 
-# 数据来源
+# 数据收集层
+## 财务报告
+
+## 公告
+- [x] 上交所
+- [x] 深交所
+- [ ] 港交所
+
 
 ## 舆情
 - [x] 东方财富网
@@ -70,6 +77,8 @@ from agno.tools.yfinance import YFinanceTools
 - [ ] 腾讯财经
 - [ ] 网易财经
 - [ ] 金融界
+
+
 
 ## 政策
 - [ ] 证券时报网
