@@ -14,12 +14,13 @@ uv init  # 如果有pyproject.toml则不需要这一行
 uv add agno openai 
 uv add fastapi uvicorn yfinance  # level_1_agent
 uv add sqlalchemy lancedb tantivy  # level_2/3
-uv add duckduckgo-search  # level_4
+uv add duckduckgo-search  # level_4 一种web搜索引擎
 uv add pgvector psycopg pylance # level_2(gemini)
 
 uv add anthropic  # 如果使用claude模型
 uv run .\main.py  # 注意使用千问模型，则需要提前配置API_KEY
 ```
+
 全局变量设置
 - `win + R` -> input `sysdm.cpl` -> `高级` -> `环境变量` -> `系统变量`，根据需要添加以下变量名:
   - `OPENAI_API_KEY`
@@ -52,6 +53,27 @@ from agno.vectordb.lancedb import LanceDb, SearchType
 
 from agno.tools.yfinance import YFinanceTools
 ```
+
+# 数据来源
+
+## 舆情
+- [x] 东方财富网
+- [ ] 雪球
+- [ ] 同花顺
+- [ ] 新浪财经
+- [ ] 腾讯财经
+- [ ] 网易财经
+- [ ] 金融界
+
+## 新闻
+- [ ] 新浪财经
+- [ ] 腾讯财经
+- [ ] 网易财经
+- [ ] 金融界
+
+## 政策
+- [ ] 证券时报网
+- [ ] 中国证券网
 
 
 # UI

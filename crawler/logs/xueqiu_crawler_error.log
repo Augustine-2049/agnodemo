@@ -1,0 +1,6 @@
+ERROR - logger_config.py:113 - 网络请求失败 (第 1 页): 400 Client Error:  for url: https://xueqiu.com/v4/statuses/stock_timeline.json?symbol_id=002594&count=20&source=all&page=1 - 2025-07-06 02:11:58
+ERROR - logger_config.py:113 - 爬取第 1 页时发生错误: 400 Client Error:  for url: https://xueqiu.com/v4/statuses/stock_timeline.json?symbol_id=002594&count=20&source=news&page=1 - 2025-07-06 02:11:59
+ERROR - logger_config.py:113 - 网络请求失败 (第 1 页): 400 Client Error:  for url: https://xueqiu.com/v4/statuses/stock_timeline.json?symbol_id=300474&count=20&source=all&page=1 - 2025-07-06 02:11:59
+ERROR - logger_config.py:113 - 爬取第 1 页时发生错误: 400 Client Error:  for url: https://xueqiu.com/v4/statuses/stock_timeline.json?symbol_id=300474&count=20&source=news&page=1 - 2025-07-06 02:11:59
+ERROR - logger_config.py:113 - 网络请求失败 (第 1 页): 400 Client Error:  for url: https://xueqiu.com/v4/statuses/stock_timeline.json?symbol_id=600036&count=20&source=all&page=1 - 2025-07-06 02:11:59
+ERROR - logger_config.py:113 - 爬取第 1 页时发生错误: 400 Client Error:  for url: https://xueqiu.com/v4/statuses/stock_timeline.json?symbol_id=600036&count=20&source=news&page=1 - 2025-07-06 02:11:59

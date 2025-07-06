@@ -1,0 +1,41 @@
+INFO - logger_config.py:105 - info - 开始爬取雪球网数据 - 2025-07-06 02:11:58
+INFO - logger_config.py:105 - info - 开始爬取股票 002594 的雪球讨论，最大页数: 5，时间限制: 7天以内 - 2025-07-06 02:11:58
+INFO - logger_config.py:105 - info - 时间限制点: 2025-06-29 02:11:58 - 2025-07-06 02:11:58
+INFO - logger_config.py:105 - info - 正在爬取第 1 页: https://xueqiu.com/v4/statuses/stock_timeline.json - 2025-07-06 02:11:58
+ERROR - logger_config.py:113 - error - 网络请求失败 (第 1 页): 400 Client Error:  for url: https://xueqiu.com/v4/statuses/stock_timeline.json?symbol_id=002594&count=20&source=all&page=1 - 2025-07-06 02:11:58
+INFO - logger_config.py:105 - info - 股票 002594 爬取完成 | 页数: 0 | 新闻数: 0 - 2025-07-06 02:11:58
+INFO - logger_config.py:105 - info - 时间过滤统计: 总共过滤 0 条过期讨论 - 2025-07-06 02:11:58
+INFO - logger_config.py:105 - info - 讨论结果: DataFrame形状: (0, 0) - 2025-07-06 02:11:58
+INFO - logger_config.py:105 - info - 开始爬取股票 002594 的雪球新闻，最大页数: 3，时间限制: 7天以内 - 2025-07-06 02:11:58
+INFO - logger_config.py:105 - info - 正在爬取第 1 页新闻 - 2025-07-06 02:11:58
+ERROR - logger_config.py:113 - error - 爬取第 1 页时发生错误: 400 Client Error:  for url: https://xueqiu.com/v4/statuses/stock_timeline.json?symbol_id=002594&count=20&source=news&page=1 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 股票 002594 爬取完成 | 页数: 0 | 新闻数: 0 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 时间过滤统计: 总共过滤 0 条过期新闻 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 新闻结果: DataFrame形状: (0, 0) - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 开始爬取股票 300474 的雪球讨论，最大页数: 5，时间限制: 7天以内 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 时间限制点: 2025-06-29 02:11:59 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 正在爬取第 1 页: https://xueqiu.com/v4/statuses/stock_timeline.json - 2025-07-06 02:11:59
+ERROR - logger_config.py:113 - error - 网络请求失败 (第 1 页): 400 Client Error:  for url: https://xueqiu.com/v4/statuses/stock_timeline.json?symbol_id=300474&count=20&source=all&page=1 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 股票 300474 爬取完成 | 页数: 0 | 新闻数: 0 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 时间过滤统计: 总共过滤 0 条过期讨论 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 讨论结果: DataFrame形状: (0, 0) - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 开始爬取股票 300474 的雪球新闻，最大页数: 3，时间限制: 7天以内 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 正在爬取第 1 页新闻 - 2025-07-06 02:11:59
+ERROR - logger_config.py:113 - error - 爬取第 1 页时发生错误: 400 Client Error:  for url: https://xueqiu.com/v4/statuses/stock_timeline.json?symbol_id=300474&count=20&source=news&page=1 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 股票 300474 爬取完成 | 页数: 0 | 新闻数: 0 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 时间过滤统计: 总共过滤 0 条过期新闻 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 新闻结果: DataFrame形状: (0, 0) - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 开始爬取股票 600036 的雪球讨论，最大页数: 5，时间限制: 7天以内 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 时间限制点: 2025-06-29 02:11:59 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 正在爬取第 1 页: https://xueqiu.com/v4/statuses/stock_timeline.json - 2025-07-06 02:11:59
+ERROR - logger_config.py:113 - error - 网络请求失败 (第 1 页): 400 Client Error:  for url: https://xueqiu.com/v4/statuses/stock_timeline.json?symbol_id=600036&count=20&source=all&page=1 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 股票 600036 爬取完成 | 页数: 0 | 新闻数: 0 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 时间过滤统计: 总共过滤 0 条过期讨论 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 讨论结果: DataFrame形状: (0, 0) - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 开始爬取股票 600036 的雪球新闻，最大页数: 3，时间限制: 7天以内 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 正在爬取第 1 页新闻 - 2025-07-06 02:11:59
+ERROR - logger_config.py:113 - error - 爬取第 1 页时发生错误: 400 Client Error:  for url: https://xueqiu.com/v4/statuses/stock_timeline.json?symbol_id=600036&count=20&source=news&page=1 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 股票 600036 爬取完成 | 页数: 0 | 新闻数: 0 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 时间过滤统计: 总共过滤 0 条过期新闻 - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 新闻结果: DataFrame形状: (0, 0) - 2025-07-06 02:11:59
+INFO - logger_config.py:105 - info - 雪球网爬取完成 - 2025-07-06 02:11:59
