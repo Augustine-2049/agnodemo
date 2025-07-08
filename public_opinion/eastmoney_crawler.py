@@ -50,7 +50,7 @@ def parse_time_string(time_str):
         # 如果解析失败，返回None
         return None
 
-def crawl_eastmoney_news(stock_code, logger=None, max_pages=5, days_limit=7):
+def crawl_eastmoney(stock_code, logger=None, max_pages=5, days_limit=7):
     """
     爬取东方财富个股新闻
     :param stock_code: 股票代码，如 '600519'
@@ -216,10 +216,10 @@ if __name__ == "__main__":
     logger = create_logger('eastmoney_crawler', console_level=logging.WARNING)
     logger.info("开始爬取东方财富新闻")
     
-    code_list = ['002594', '300474', '600036']
+    code_list = ['002594', '300474', '600036', '688981']
     for code in code_list:
         # 爬取数据（只保留7天内的数据）
-        df = crawl_eastmoney_news(code, logger, max_pages=10, days_limit=7)
+        df = crawl_eastmoney(code, logger, max_pages=10, days_limit=7)
         
         logger.info(f"最终结果: DataFrame形状: {df.shape}")
         if not df.empty:
